@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wechat_upp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/upp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/wechat_more"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wechat_more"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/TODO"
+        app:layout_constraintBottom_toBottomOf="@+id/wechat_upp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/wechat_upp"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/more" />
+
+    <TextView
+        android:id="@+id/wechat_info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/upp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wechat_add3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/wechat_infoimg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/TODO"
+        app:layout_constraintBottom_toTopOf="@+id/wechat_info3"
+        app:layout_constraintEnd_toEndOf="@+id/wechat_info3"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/wechat_info3"
+        app:srcCompat="@drawable/wechat" />
+
+    <ImageView
+        android:id="@+id/wechat_addimg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/TODO"
+        app:layout_constraintBottom_toTopOf="@+id/wechat_add3"
+        app:layout_constraintEnd_toEndOf="@+id/wechat_add3"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/wechat_add3"
+        app:srcCompat="@drawable/address" />
+
+    <TextView
+        android:id="@+id/wechat_find3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/find"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wechat_mine3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wechat_add3" />
+
+    <ImageView
+        android:id="@+id/wechat_mineimg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/TODO"
+        app:layout_constraintBottom_toTopOf="@+id/wechat_mine3"
+        app:layout_constraintEnd_toEndOf="@+id/wechat_mine3"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/wechat_mine3"
+        app:srcCompat="@drawable/me" />
+
+    <TextView
+        android:id="@+id/wechat_add3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/address"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wechat_find3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wechat_info3" />
+
+    <ImageView
+        android:id="@+id/wechat_findimg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/TODO"
+        app:layout_constraintBottom_toTopOf="@+id/wechat_find3"
+        app:layout_constraintEnd_toEndOf="@+id/wechat_find3"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@+id/wechat_find3"
+        app:srcCompat="@drawable/find" />
+
+    <TextView
+        android:id="@+id/wechat_mine3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/mine"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wechat_find3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
